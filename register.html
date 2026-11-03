@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | Adidas</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f5f3;font-family:Arial;color:#171717}
+header{background:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.brand{font-size:25px;font-weight:900;text-decoration:none;color:black}
+nav{background:#a7a7a5;padding:10px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;position:sticky;top:0}
+nav a{display:inline-block;padding:12px;color:black;text-decoration:none;font-weight:bold}
+.account a{background:black;color:white;border-radius:20px;padding:10px 16px}
+main{display:flex;justify-content:center;padding:40px 15px}
+form{background:white;width:100%;max-width:450px;padding:35px;border-radius:10px}
+h1{text-align:center;font-size:36px}
+label{display:block;font-weight:bold;margin:12px 0 6px}
+input{width:100%;padding:12px;border:1px solid #ccc;border-radius:5px}
+button{width:100%;background:black;color:white;border:0;padding:14px;margin-top:20px;font-weight:bold;cursor:pointer}
+p{text-align:center}
+footer{text-align:center;background:#171717;color:white;padding:24px}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">ADIDAS</a>
+<div>Call: +91 1234567890<br>info@adidas.com</div>
+</header>
+
+<nav>
+<div>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="news.html">News</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="account">
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+</div>
+</nav>
+
+<main>
+<form onsubmit="event.preventDefault();alert('Registration demo. A backend is needed to save accounts.');">
+<h1>Create Account</h1>
+
+<label for="name">Full Name</label>
+<input type="text" id="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone">
+
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob">
+
+<label for="password">Password</label>
+<input type="password" id="password" required>
+
+<button type="submit">Register</button>
+
+<p>Already have an account?</p>
+<p><a href="login.html">Login Here</a></p>
+</form>
+</main>
+
+<footer>© 2026 Adidas Demo Website</footer>
+</body>
+</html>

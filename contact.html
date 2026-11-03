@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Adidas</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f5f3;font-family:Arial;color:#171717}
+header{background:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.brand{font-size:25px;font-weight:900;text-decoration:none;color:black}
+nav{background:#a7a7a5;padding:10px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;position:sticky;top:0}
+nav a{display:inline-block;padding:12px;color:black;text-decoration:none;font-weight:bold}
+.account a{background:black;color:white;border-radius:20px;padding:10px 16px}
+main{max-width:1000px;margin:auto;padding:35px 5%}
+h1{text-align:center;font-size:42px}
+.content{background:white;padding:30px;border-radius:10px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+label{display:block;font-weight:bold;margin:12px 0 6px}
+input,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:5px}
+button{background:black;color:white;border:0;padding:13px 20px;margin-top:15px;cursor:pointer}
+footer{text-align:center;background:#171717;color:white;padding:24px}
+@media(max-width:650px){.content{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">ADIDAS</a>
+<div>Call: +91 1234567890<br>info@adidas.com</div>
+</header>
+
+<nav>
+<div>
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="news.html">News</a>
+<a href="about.html">About</a>
+<a class="active" href="contact.html">Contact</a>
+</div>
+<div class="account">
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+</div>
+</nav>
+
+<main>
+<h1>Contact Adidas</h1>
+<section class="content">
+<div>
+<h2>Get in Touch</h2>
+<p><b>Phone:</b> +91 1234567890</p>
+<p><b>Email:</b> info@adidas.com</p>
+<p><b>Address:</b> Adidas HQ, Herzogenaurach, Germany</p>
+</div>
+
+<form onsubmit="event.preventDefault();alert('Message submitted! This is a demo form.');">
+<h2>Send us a Message</h2>
+<label for="name">Name</label>
+<input id="name" type="text" required>
+
+<label for="email">Email</label>
+<input id="email" type="email" required>
+
+<label for="message">Message</label>
+<textarea id="message" rows="4" required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+</section>
+</main>
+
+<footer>© 2026 Adidas Demo Website</footer>
+</body>
+</html>
